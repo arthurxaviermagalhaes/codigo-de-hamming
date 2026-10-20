@@ -39,7 +39,7 @@ function estruturarCodigoHamming(){
         }
     }
 
-    console.log("\n--- Visualização dos Bits de Paridade ---");
+    console.log("\nVisualização dos Bits de Paridade");
 
     // Calculando os bits de paridade que ficarão nas posições que são potências de 2
     for (let i = 0; i < k; i++) {
@@ -89,7 +89,7 @@ function estruturarCodigoHamming(){
             }
         } while (!regexBinario.test(codigoCorrompido) || codigoCorrompido.length !== codigoHammingFinal.length);
 
-        console.log("\n--- Simulação de Transmissão com Erro ---");
+        console.log("\nSimulação de Transmissão com Erro");
         console.log(`Código de Hamming Original: ${codigoHammingFinal}`);
         console.log(`Código Corrompido Inserido: ${codigoCorrompido}`);
 
